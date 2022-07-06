@@ -2,6 +2,8 @@
 namespace Console
 {
     using System;
+    using Domain;
+    using FileReader;
     class Program
     {
         static void Main(string[] args)
@@ -13,6 +15,8 @@ namespace Console
             writeText("la cadena de caracteres adyacentes iguales más larga.\n\n");
             writeText("Presione enter para continuar\n\n");
             Console.ReadLine();
+            var textFile = MatrixReader.ReadFile();
+            var matrix = new Matrix(textFile);
         }
 
         private static void writeText(string text)
