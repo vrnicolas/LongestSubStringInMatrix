@@ -69,9 +69,67 @@
             return result;
         }
 
+        /// <summary>
+        /// This function will return the longest diagonal substring within the matrix.
+        /// The way that it does is calculate the longest principals diagonals, and keep the result.  
+        /// Then is going to create a mirror of the current matrix and  calculate again with that input. 
+        /// This is to calculate the secondary diagonals.
+        /// At the last, will return the longest between both previously mentioned diagonals.
+        /// </summary>
+        /// <returns></returns>
         private CandidateSubStrings getLongestDiagonalValue()
         {
-            throw new NotImplementedException();
+            var diagonalValues = this.getLongestDiagonalFromMatrix(this.Values);
+            var mirrorMatrix = this.getMirrorMatrix();
+            var mirrorDiagonalValues = this.getLongestDiagonalFromMatrix(mirrorMatrix);
+            return diagonalValues.GetLongestComparesTo(mirrorDiagonalValues);
+        }
+
+        /// <summary>
+        /// this function will calculate all the primary diagonals substrings of a matrix.
+        /// </summary>
+        /// <param name="inputArray"></param>
+        /// <returns></returns>
+        private CandidateSubStrings getLongestDiagonalFromMatrix(string[,] inputArray)
+        {
+            CandidateSubStrings result = new CandidateSubStrings("Diagonal");
+            for (int k = 0; k < this.Size * 2; k++)
+            {
+                var diagonal = string.Empty;
+                for (int j = 0; j <= k; j++)
+                {
+                    int i = k - j;
+                    if (i < this.Size && j < this.Size)
+                    {
+                        diagonal += inputArray[i, j];
+                    }
+                }
+                result.Add(diagonal);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// This function returns the mirror matrix of the current values
+        /// </summary>
+        /// <returns></returns>
+        private string[,] getMirrorMatrix()
+        {
+            var newArray = new string[this.Size, this.Size];
+            for (int rowIndex = 0;
+                 rowIndex <= (this.Values.GetUpperBound(0)); rowIndex++)
+            {
+                for (int colIndex = 0;
+                     colIndex <= (this.Values.GetUpperBound(1) / 2); colIndex++)
+                {
+                    string tempHolder = this.Values[rowIndex, colIndex];
+                    newArray[rowIndex, colIndex] =
+                      this.Values[rowIndex, this.Values.GetUpperBound(1) - colIndex];
+                    newArray[rowIndex, this.Values.GetUpperBound(1) - colIndex] =
+                      tempHolder;
+                }
+            }
+            return newArray;
         }
 
         public override string ToString()
