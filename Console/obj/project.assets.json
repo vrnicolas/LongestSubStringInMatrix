@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.0": {}
+    ".NETCoreApp,Version=v3.0": {
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
+      },
+      "FileReader/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/FileReader.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FileReader.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "FileReader/1.0.0": {
+      "type": "project",
+      "path": "../FileReader/FileReader.csproj",
+      "msbuildProject": "../FileReader/FileReader.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.0": []
+    ".NETCoreApp,Version=v3.0": [
+      "Domain >= 1.0.0",
+      "FileReader >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\YO\\.nuget\\packages\\": {},
@@ -39,7 +74,14 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\YO\\Documents\\GitHub\\LongestSubStringInMatrix\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\YO\\Documents\\GitHub\\LongestSubStringInMatrix\\Domain\\Domain.csproj"
+            },
+            "C:\\Users\\YO\\Documents\\GitHub\\LongestSubStringInMatrix\\FileReader\\FileReader.csproj": {
+              "projectPath": "C:\\Users\\YO\\Documents\\GitHub\\LongestSubStringInMatrix\\FileReader\\FileReader.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
