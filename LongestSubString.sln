@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "Console\Console.csproj", "{647A1158-D7E4-484F-B072-2A7F961F8410}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{F4D69FB4-9FFC-445E-B24F-B11BEC8065AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileReader", "FileReader\FileReader.csproj", "{45D08AD3-B57F-4004-9506-F94F29B1F8DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{647A1158-D7E4-484F-B072-2A7F961F8410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{647A1158-D7E4-484F-B072-2A7F961F8410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{647A1158-D7E4-484F-B072-2A7F961F8410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{647A1158-D7E4-484F-B072-2A7F961F8410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4D69FB4-9FFC-445E-B24F-B11BEC8065AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4D69FB4-9FFC-445E-B24F-B11BEC8065AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4D69FB4-9FFC-445E-B24F-B11BEC8065AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4D69FB4-9FFC-445E-B24F-B11BEC8065AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45D08AD3-B57F-4004-9506-F94F29B1F8DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45D08AD3-B57F-4004-9506-F94F29B1F8DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45D08AD3-B57F-4004-9506-F94F29B1F8DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45D08AD3-B57F-4004-9506-F94F29B1F8DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03A8697C-10B6-4047-9043-A1832BD82375}
+	EndGlobalSection
+EndGlobal
