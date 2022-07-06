@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\YO\\source\\repos\\Solution\\LongestSubString\\Console\\Console.csproj",
+      "projectUniqueName": "C:\\Users\\YO\\Documents\\GitHub\\LongestSubStringInMatrix\\Console\\Console.csproj",
       "projectName": "Console",
-      "projectPath": "C:\\Users\\YO\\source\\repos\\Solution\\LongestSubString\\Console\\Console.csproj",
+      "projectPath": "C:\\Users\\YO\\Documents\\GitHub\\LongestSubStringInMatrix\\Console\\Console.csproj",
       "packagesPath": "C:\\Users\\YO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\YO\\source\\repos\\Solution\\LongestSubString\\Console\\obj\\",
+      "outputPath": "C:\\Users\\YO\\Documents\\GitHub\\LongestSubStringInMatrix\\Console\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

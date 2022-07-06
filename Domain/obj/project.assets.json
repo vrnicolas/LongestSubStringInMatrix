@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\YO\\source\\repos\\Solution\\LongestSubString\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\YO\\Documents\\GitHub\\LongestSubStringInMatrix\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\YO\\source\\repos\\Solution\\LongestSubString\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Users\\YO\\Documents\\GitHub\\LongestSubStringInMatrix\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\YO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\YO\\source\\repos\\Solution\\LongestSubString\\Domain\\obj\\",
+      "outputPath": "C:\\Users\\YO\\Documents\\GitHub\\LongestSubStringInMatrix\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

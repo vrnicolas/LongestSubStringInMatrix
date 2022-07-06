@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\YO\\source\\repos\\Solution\\LongestSubString\\FileReader\\FileReader.csproj": {}
+    "C:\\Users\\YO\\Documents\\GitHub\\LongestSubStringInMatrix\\FileReader\\FileReader.csproj": {}
   },
   "projects": {
-    "C:\\Users\\YO\\source\\repos\\Solution\\LongestSubString\\FileReader\\FileReader.csproj": {
+    "C:\\Users\\YO\\Documents\\GitHub\\LongestSubStringInMatrix\\FileReader\\FileReader.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\YO\\source\\repos\\Solution\\LongestSubString\\FileReader\\FileReader.csproj",
+        "projectUniqueName": "C:\\Users\\YO\\Documents\\GitHub\\LongestSubStringInMatrix\\FileReader\\FileReader.csproj",
         "projectName": "FileReader",
-        "projectPath": "C:\\Users\\YO\\source\\repos\\Solution\\LongestSubString\\FileReader\\FileReader.csproj",
+        "projectPath": "C:\\Users\\YO\\Documents\\GitHub\\LongestSubStringInMatrix\\FileReader\\FileReader.csproj",
         "packagesPath": "C:\\Users\\YO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\YO\\source\\repos\\Solution\\LongestSubString\\FileReader\\obj\\",
+        "outputPath": "C:\\Users\\YO\\Documents\\GitHub\\LongestSubStringInMatrix\\FileReader\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
