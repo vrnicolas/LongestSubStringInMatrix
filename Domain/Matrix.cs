@@ -28,7 +28,28 @@
         /// <returns></returns>
         public CandidateSubStrings GetLongestSubString()
         {
-            return null;
+            var longestsHorizontalResult = this.getLongestHorizontalValue();
+            var longestsVerticalResult = this.getLongestVerticalValue();
+            var longestsDiagonalResults = this.getLongestDiagonalValue();
+
+            var longestHorizontalOrVerticalResult = longestsHorizontalResult.GetLongestComparesTo(longestsVerticalResult);
+            var longestResult = longestHorizontalOrVerticalResult.GetLongestComparesTo(longestsDiagonalResults);
+            return longestResult;
+        }
+
+        private CandidateSubStrings getLongestHorizontalValue()
+        {
+            throw new NotImplementedException();
+        }
+
+        private CandidateSubStrings getLongestVerticalValue()
+        {
+            throw new NotImplementedException();
+        }
+
+        private CandidateSubStrings getLongestDiagonalValue()
+        {
+            throw new NotImplementedException();
         }
 
         public override string ToString()
