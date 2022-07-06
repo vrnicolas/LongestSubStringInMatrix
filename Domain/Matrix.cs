@@ -30,5 +30,19 @@
         {
             return null;
         }
+
+        public override string ToString()
+        {
+            var result = string.Empty;
+            for (int i = 0; i < this.Size; i++)
+            {
+                for (int j = 0; j < this.Size; j++)
+                {
+                    result += Values[i, j];
+                }
+                result += "\n";
+            }
+            return result;
+        }
     }
 }
