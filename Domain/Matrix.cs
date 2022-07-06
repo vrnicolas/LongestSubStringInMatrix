@@ -16,7 +16,19 @@
             this.Size = (width == height) ? width :
             throw new Exception("Invalid Matrix size, must contain the same width than heigth");
 
-            this.Values = this.parseToCharArray(matrix);
+            this.Values = null; // to cast
+        }
+
+        /// <summary>
+        /// This method will calculate the longest substring in 
+        /// the matrix. To accomplish that this code will get the 
+        /// longest horizontal, vertical and diagonal substrings
+        /// to be compared at the very last and return the longest one.
+        /// </summary>
+        /// <returns></returns>
+        public CandidateSubStrings GetLongestSubString()
+        {
+            return null;
         }
     }
 }
