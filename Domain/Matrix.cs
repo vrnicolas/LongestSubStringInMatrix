@@ -39,7 +39,18 @@
 
         private CandidateSubStrings getLongestHorizontalValue()
         {
-            throw new NotImplementedException();
+            var result = new CandidateSubStrings("Horizontal");
+            for (int i = 0; i < this.Size; i++)
+            {
+                var rowValue = string.Empty;
+                for (int j = 0; j < this.Size; j++)
+                {
+                    rowValue += Values[i, j];
+                }
+
+                result.Add(rowValue);
+            }
+            return result;
         }
 
         private CandidateSubStrings getLongestVerticalValue()
