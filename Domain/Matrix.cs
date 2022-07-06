@@ -16,7 +16,7 @@
             this.Size = (width == height) ? width :
             throw new Exception("Invalid Matrix size, must contain the same width than heigth");
 
-            this.Values = null; // to cast
+            this.Values = this.parseToCharArray(matrix);
         }
 
         /// <summary>
@@ -41,6 +41,26 @@
                     result += Values[i, j];
                 }
                 result += "\n";
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// This function convert a string[] to a string[,]
+        /// </summary>
+        /// <param name="matrix"></param>
+        /// <returns></returns>
+        private string[,] parseToCharArray(string[] matrix)
+        {
+            var result = new string[this.Size, this.Size];
+            for (var i = 0; i < matrix.Length; i++)
+            {
+                var value = matrix[i];
+                for (int j = 0; j < value.Length; j++)
+                {
+                    var pivot = value[j];
+                    result[i, j] = pivot.ToString();
+                }
             }
             return result;
         }
